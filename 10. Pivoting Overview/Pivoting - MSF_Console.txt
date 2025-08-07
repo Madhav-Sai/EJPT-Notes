@@ -1,0 +1,32 @@
+#### Pivoting Overview - MSF
+
+###### check other local networks
+
+> ipconfig
+> 
+> arp -a  
+
+###### Add route to these network. After that, we can target other machines
+
+> run autoroute -s 10.0.27.0/24
+
+###### Perform a port scan to a target
+
+###### NB : we can also perform icmp scan in order to detect other hosts
+
+> use auxiliary/scanner/portscan/tcp 
+> set RHOSTS 10.0.27.99 
+> set PORTS 1-100 
+> exploit
+
+###### Setup a port forwarding on meterpreter. This will allow us to do deeper service scan with nmap
+
+> portfwd add -l 1234 -p 80 -r 10.0.27.99 
+> 
+> portfwd list
+> 
+> root@root:~# nmap localhost -p 1234 -sV -sS
+
+
+
+

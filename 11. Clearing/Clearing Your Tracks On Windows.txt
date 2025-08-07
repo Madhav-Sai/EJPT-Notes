@@ -1,0 +1,26 @@
+#### Clearing Your Tracks On Windows
+
+
+
+###### Clearing Your Tracks On Windows (Meterpreter)
+
+```
+clearev
+```
+
+###### Clearing Your Tracks On linux
+
+```
+history -c
+cat /dev/null > ~/.bash_history
+```
+
+###### Best pratices when clearing tracks
+
+```
+Always save your file on C:\Temp (windows) or /tmp (linux)
+Verify the advanced setting of module (check if registres are not modified)
+Delete the transfered files : C:\Temp
+Check if the file transfered by the exploit are deleted
+Verify the message while the MSF module are running
+```

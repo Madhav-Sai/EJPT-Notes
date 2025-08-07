@@ -1,0 +1,21 @@
+#### Windows: NTLM Hash Cracking
+
+
+
+###### Dump Hash Meterpreter
+
+> Hashdump  // dump password hashes
+> 
+> creds // show dumped creds
+
+###### Crack Hashes with MSF Module
+
+> auxiliary/analyze/crack_windows
+> 
+> set custom_wordlist <list>
+
+###### FYI : this module use john the ripper
+
+
+
+

